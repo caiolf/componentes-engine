@@ -1,0 +1,30 @@
+<div class="topo borda1">
+  <img class="logo" src="./assets/logo.png" alt="Components Engine" />
+  <div class="link-nav">
+    @for (item of [ { title: 'home', link: 'https://www.componentsengine.com/'
+    }, { title: 'products', link:
+    'https://www.componentsengine.com/site/page.wplus/Electronic-parts-catalog/English/ID_COUNT/Prodotti/LN/2/wx/Prodotti.html'
+    }, { title: 'company', link:
+    'https://www.componentsengine.com/site/page.wplus/Electronic-parts-catalog/English/ID_COUNT/chi_siamo/LN/2/wx/chi_siamo.html'
+    }, { title: 'download', link:
+    'https://www.componentsengine.com/site/page.wplus/Electronic-parts-catalog/English/ID_COUNT/downviewer/LN/2/wx/downviewer.html'
+    }, { title: 'news', link:
+    'https://www.componentsengine.com/site/page.wplus/Electronic-parts-catalog/English/ID_COUNT/news/LN/2/wx/news.html'
+    }, ]; track item.title) {
+    <a class="pill" [href]="item.link" target="_blank" rel="noopener">
+      <span>{{ item.title.toUpperCase() }}</span>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        height="14"
+        viewBox="0 -960 960 960"
+        width="14"
+        fill="currentColor"
+      >
+        <path
+          d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h560v-280h80v280q0 33-23.5 56.5T760-120H200Zm188-212-56-56 372-372H560v-80h280v280h-80v-144L388-332Z"
+        />
+      </svg>
+    </a>
+    }
+  </div>
+</div>

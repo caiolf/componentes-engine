@@ -1,0 +1,29 @@
+.card-section {
+  padding-top: 20px;
+  .cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    width: 180px;
+    img {
+      width: 80px;
+    }
+    h2 {
+      color: rgb(219, 2, 2);
+    }
+    a {
+      padding: 10px;
+      border-radius: 20px;
+      transition: 0.2s;
+    }
+    a:hover {
+      background: rgba(219, 2, 2, 0.281);
+    }
+  }
+}
